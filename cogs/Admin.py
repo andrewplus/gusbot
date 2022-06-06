@@ -1,7 +1,6 @@
 import discord, os, sys
 from discord.ext import commands
-sys.path.append(os.getcwd() + '/..') # hacky workaround
-from new_em_bot import constants
+import constants
 
 class Admin(commands.Cog):
     def __init__(self, bot):

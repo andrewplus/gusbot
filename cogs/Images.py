@@ -1,8 +1,7 @@
 import discord, os, json, urllib, random, sys
 from discord.ext import commands
 from datetime import datetime
-sys.path.append(os.getcwd() + '/..') # hacky workaround
-from new_em_bot import constants
+import constants
 
 # Download/update image cache
 # Will be saved on disk at `cache_file`

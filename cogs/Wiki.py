@@ -1,7 +1,6 @@
 import discord, os, sys, json, urllib
 from discord.ext import commands
-sys.path.append(os.getcwd() + '/..') # hacky workaround
-from new_em_bot import constants
+import constants
 
 # Gets JSON response from API request
 def get_json(url):
