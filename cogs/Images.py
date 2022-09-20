@@ -139,5 +139,5 @@ class Images(commands.Cog):
                 fan_art = json.load(data)
                 await ctx.send(str(len(fan_art)))
 
-def setup(bot):
-    bot.add_cog(Images(bot))
+async def setup(bot):
+    await bot.add_cog(Images(bot))

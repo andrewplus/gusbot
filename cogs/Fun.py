@@ -1,6 +1,6 @@
 import discord, os, sys
 from discord.ext import commands
-import constants
+import constants, log
 
 class Fun(commands.Cog):
     def __init__(self, bot):
@@ -8,7 +8,8 @@ class Fun(commands.Cog):
             
     @commands.command(description="Initiates a certified Epic Mickey Moment™.")
     async def epicmickeymoment(self, ctx):
+        log.command(ctx)
         await ctx.send("https://tenor.com/view/epic-mickey-epic-mickey-moment-disney-animation-pig-animation-gif-22760640")
 
-def setup(bot):
-    bot.add_cog(Fun(bot))
+async def setup(bot):
+    await bot.add_cog(Fun(bot))

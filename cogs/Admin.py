@@ -12,5 +12,5 @@ class Admin(commands.Cog):
             guildcount = len(list(self.bot.guilds))
             await ctx.send(str(guildcount))
 
-def setup(bot):
-    bot.add_cog(Admin(bot))
+async def setup(bot):
+    await bot.add_cog(Admin(bot))

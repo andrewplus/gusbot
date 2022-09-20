@@ -12,9 +12,9 @@ def get_token(prod):
     else:
         return debug_token
 
-production = True # If true, production_token will be used instead of debug_token
-version = "2.3.2" # Set manually
-last_update = "20/10/2021" # Set manually
+production = False # If true, production_token will be used instead of debug_token
+version = "2.5.0" # Set manually
+last_update = "20/09/2022" # Set manually
 production_token = private.production_token
 debug_token = private.debug_token
 token = get_token(production)

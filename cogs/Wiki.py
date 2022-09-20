@@ -41,5 +41,5 @@ class Wiki(commands.Cog):
     async def project(self, ctx, *, query):
         await ctx.send(get_search_result(query, 4))
 
-def setup(bot):
-    bot.add_cog(Wiki(bot))
+async def setup(bot):
+    await bot.add_cog(Wiki(bot))
