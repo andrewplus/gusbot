@@ -8,7 +8,6 @@ class Fun(commands.Cog):
             
     @commands.command(description="Initiates a certified Epic Mickey Moment™.")
     async def epicmickeymoment(self, ctx):
-        log.command(ctx)
         await ctx.send("https://tenor.com/view/epic-mickey-epic-mickey-moment-disney-animation-pig-animation-gif-22760640")
 
 async def setup(bot):

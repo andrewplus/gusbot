@@ -25,4 +25,4 @@ class GusBot(commands.Bot):
 # Start bot
 bot = GusBot()
 log.put("The bot has been started. Attempting to connect to Discord.", "system")
-bot.run(constants.token)
+bot.run(os.getenv(constants.token_var))

@@ -14,7 +14,7 @@ class Meta(commands.Cog):
     @commands.command(description="Information and stats about the bot.")
     async def info(self, ctx):
         embed = discord.Embed(title="Gremlin Gus Bot", description="A bot with several Epic Mickey-specific features and commands. Type $help for the command list.", color=0xe37814)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/614928078111506459/d24a68ce142f14928b9a9438ac6b5f39.png")
+        embed.set_thumbnail(url="https://i.imgur.com/nc3kDJH.jpg")
         embed.add_field(name="Author", value="RampantLeaf#6119", inline=True)
         embed.add_field(name="Bot version", value=constants.version, inline=True)
         embed.add_field(name="Python version", value=python_version(), inline=True)
